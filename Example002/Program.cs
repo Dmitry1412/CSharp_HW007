@@ -18,3 +18,81 @@
 из метода FindNumberByPosition. Если такого элемента нет, вывести на экран "There is no such index".
 Если элемент есть, вывести на экран "The number in [{x}, {y}] is {значение}".
 */
+
+
+int[,] arr = CreateIncreasingMatrix(4, 4, 2);
+PrintArray(arr);
+int[,] arrResult = FindNumberByPosition(arr, 3, 3);
+System.Console.WriteLine();
+PrintArray(arrResult);
+PrintCheckIfError(arrResult, 3, 3);
+
+void PrintCheckIfError(int[,] array, int x, int y)
+{
+    int sum = 0;
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            sum += array[i, j];
+        }
+    }
+    if (sum == 0) System.Console.WriteLine("There is no such index");
+    else System.Console.WriteLine($"The number in [{x}, {y}] is {array[x, y]}");
+}
+
+int[,] FindNumberByPosition(int[,] array, int x, int y)
+{
+    if (x > (array.GetLength(0)-1) | y > (array.GetLength(1)-1))
+    {
+        for (int i = 0; i < array.GetLength(0); i++)
+        {
+            for (int j = 0; j < array.GetLength(1); j++)
+            {
+                array[i, j] = 0;
+            }
+        } 
+    }
+    else
+    {
+        int tmp = array[x, y];
+        for (int i = 0; i < array.GetLength(0); i++)
+        {
+            for (int j = 0; j < array.GetLength(1); j++)
+            {
+               array[i, j] = 0;
+               array[x,y] = tmp;
+            }
+        }  
+    }
+    return array;
+}
+
+int[,] CreateIncreasingMatrix(int n, int m, int k)
+{
+    Random random = new Random();
+    int[,] array = new int[n, m];
+    array[0, 0] = random.Next(0, 10);
+    int sum = k;
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            array[i, j] = array[0, 0] + sum;
+            sum += k;
+        }
+    }
+    return array;
+}
+
+void PrintArray(int[,] array)
+{
+    for(int i = 0; i < array.GetLength(0); i++)
+    {
+        for(int j = 0; j < array.GetLength(1); j++)
+        {
+            Console.Write(array[i,j] + " ");
+        }
+    Console.WriteLine();  
+    }
+}
