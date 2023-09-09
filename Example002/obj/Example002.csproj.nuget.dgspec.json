@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Дмитрий\\Desktop\\GITRepository\\CSharp_HW007\\Example001\\Example001.csproj": {}
+    "C:\\Users\\Дмитрий\\Desktop\\GITRepository\\CSharp_HW007\\Example002\\Example002.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Дмитрий\\Desktop\\GITRepository\\CSharp_HW007\\Example001\\Example001.csproj": {
+    "C:\\Users\\Дмитрий\\Desktop\\GITRepository\\CSharp_HW007\\Example002\\Example002.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Дмитрий\\Desktop\\GITRepository\\CSharp_HW007\\Example001\\Example001.csproj",
-        "projectName": "Example001",
-        "projectPath": "C:\\Users\\Дмитрий\\Desktop\\GITRepository\\CSharp_HW007\\Example001\\Example001.csproj",
+        "projectUniqueName": "C:\\Users\\Дмитрий\\Desktop\\GITRepository\\CSharp_HW007\\Example002\\Example002.csproj",
+        "projectName": "Example002",
+        "projectPath": "C:\\Users\\Дмитрий\\Desktop\\GITRepository\\CSharp_HW007\\Example002\\Example002.csproj",
         "packagesPath": "C:\\Users\\Дмитрий\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Дмитрий\\Desktop\\GITRepository\\CSharp_HW007\\Example001\\obj\\",
+        "outputPath": "C:\\Users\\Дмитрий\\Desktop\\GITRepository\\CSharp_HW007\\Example002\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Дмитрий\\AppData\\Roaming\\NuGet\\NuGet.Config",
